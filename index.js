@@ -6,6 +6,13 @@ var board = new Kegboard({
 });
 
 board.on('hello', function (data) {
-    console.log('hello');
-    console.log(JSON.stringify(data, null, 2));
+    console.log('hello', JSON.stringify(data, null, 2));
+});
+
+board.on('meter_status', function (data) {
+    console.log('meter_status', JSON.stringify(data, null, 2));
+});
+
+board.on('error', function (err) {
+    console.log('error reading from kegboard', err);
 });

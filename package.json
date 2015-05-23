@@ -2,14 +2,12 @@
   "name": "node-kegboard",
   "version": "0.1.0",
   "description": "Node library for interfacing with a kegboard",
-  "main": "index.js",
+  "main": "lib/Kegboard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
   "dependencies": {
-    "buffer-split": "0.0.0",
     "lodash.findwhere": "^3.1.0",
     "lodash.partial": "^3.1.0",
     "serialport": "^1.7.1"
